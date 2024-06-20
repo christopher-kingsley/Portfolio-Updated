@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom, #000000, #1a1a1a, #333333);
+    color: white;
+    min-height: 100vh; /* Ensure body covers the entire viewport */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    max-width: 150px;
+    max-height: 50px;
+    margin-right: auto;
+    filter: drop-shadow(0 2px 4px rgba(255, 255, 255, 0.1));
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.nav_links li a {
+    transition: color 0.3s ease;
+    font-size: 18px;
+    color: white;
+    text-decoration: none; /* Add this line to remove underlines */
+}
+
+.nav_links li a:hover {
+    color: #6fa3ef;
+    text-decoration: none; /* Add this line to remove underlines */
+}
+
+.title {
+    font-size: 36px;
+    color: white;
+    margin-top: 100px; /* Ensuring space between navbar and title */
+    margin-left: 10%; /* Aligning title to the left */
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    margin-top: calc(50vh - 250px); /* Adjusted to vertically center content */
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 1; /* Ensure content appears above background */
+}
+
+
+.education,
+.work-experience,
+.skills {
+    margin-bottom: 30px;
+}
+
+.education h2,
+.work-experience h2,
+.skills h2 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.job {
+    margin-bottom: 20px;
+}
+
+.job h3 {
+    color: #6fa3ef;
+    margin-bottom: 10px;
+}
+
+.skills ul {
+    list-style-type: none;
+}
+
+.skills ul li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    background-color: #6fa3ef;
+    color: white;
+    border-radius: 5px;
+}
+/* Footer Styles */
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.footer-content nav {
+    flex-grow: 1; /* Take remaining space */
+    text-align: right;
+}
+
+.footer-content nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-content nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-content nav ul li a:hover {
+    color: #6fa3ef;
+}

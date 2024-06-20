@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christopher Kingsley Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/logo.png" alt="Logo">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="#" id="contact-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="banner1">
+        <p class="introText">Welcome! I'm <span class="name">Christopher Kingsley</span>,<br>
+            a passionate Computer Engineering student dedicated to innovation and growth.</p>
+        <img src="img/me.jpg" alt="Christopher Kingsley" class="personalPhoto">
+    </div>
+    
+    <div class="banner2">
+        <h3>A little about me</h3>
+        <p>I am from North Carolina and attend North Carolina A&T University. My passion for this field comes from ... <a href="about.html">more</a></p>
+    </div>
+    <div class="slidingPhotos">
+        <div class="slider">
+            <div class="slides">
+                <img src="img/calculatorspreadsheet.png" alt="img1" class="slide">
+                <img src="img/nightlight.PNG" alt="img2" class="slide">
+                <img src="img/vhdldemo.png" alt="img3" class="slide">
+            </div>
+            <button class="prev" onclick="prev();">&#10094;</button>
+            <button class="next" onclick="next();">&#10095;</button>
+        </div>
+    </div>
+    <div class="banner3">
+        <h2>Socials</h2>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com" target="_blank">
+                <i class="fa fa-linkedin fa-5x" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.github.com" target="_blank">
+                <i class="fa fa-github fa-5x" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Christopher Kingsley. All rights reserved.</p>
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="#" id="contact-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    
+    <script src="app.js"></script>
+</body>
+</html>

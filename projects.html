@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="projectStyles.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/logo.png" alt="Logo">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="#" id="contact-link" >Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2>Projects</h2>
+    <div class="projects">
+        <div class="project">
+            <h3>Spreadsheet Based Calculator</h3>
+            <img src="img/calculatorspreadsheet.png" alt="Calculator Screenshot">
+            <div class="project-links">
+                <a href="https://github.com/KingGhostZ/Calculator">Code on GitHub</a>
+            </div>
+            <p>This calculator will continue to take input until the cancel button is pressed. </p>
+            <p>Each time a user presses submit, the table will update and compute new information <br>for the user. </p>
+        </div>
+        
+        <div class="project">
+            <h3>Traffic Light Controller</h3>
+            <img src="img/vhdldemo.png" alt="Traffic Light Controller Screenshot">
+            <div class="project-links">
+                <a href="https://github.com/KingGhostZ/Traffic-Light-Controller">Code on GitHub</a>
+            </div>
+            <p>Built a VHDL based traffic light controller that has the red, yellow, and green light.</p>
+            <p>This utilizes a finite state machine that would only activate the turn lanes or other directions based off of sensors.</p>
+        </div>
+        
+        <div class="project">
+            <h3>Vending Machine Controller</h3>
+            <img src="img/vendingMachine.png" alt="Vending Machine Controller Screenshot">
+            <div class="project-links">
+                <a href="https://github.com/KingGhostZ/Vending-Machine-Controller">Code on GitHub</a>
+            </div>
+            <p>Built a VHDL based vending machine that can take quarters, dimes, and nickels.</p>
+            <p>It has soda and candy as different options that both cost two different amounts of money.</p>
+        </div>
+        
+        <div class="project">
+            <h3>Lawn Mower Warehouse</h3>
+            <img src="img/warehousePhoto.png" alt="Lawn Mower Warehouse Screenshot">
+            <div class="project-links">
+                <a href="https://github.com/KingGhostZ/Mower-Warehouse">Code on GitHub</a>
+            </div>
+            <p>Built a Java based warehouse manager for lawn mowers that can take in a file of inputs and classify them into different categories.</p>
+            <p>The output of this program writes it to a text file that the user can export depending on the types of mowers that they are requesting.</p>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Christopher Kingsley. All rights reserved.</p>
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="#" id="contact-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Find the Contact link by its ID
+            var contactLink = document.getElementById('contact-link');
+    
+            // Add a click event listener to the Contact link
+            contactLink.addEventListener('click', function(event) {
+                // Prevent the default action (following the link)
+                event.preventDefault();
+    
+                // Display an alert or custom message
+                alert("The Contact page is currently under maintenance and not accessible.");
+    
+                // Optionally, you can redirect to another page instead of showing an alert
+                // window.location.href = "under-maintenance.html";
+            });
+        });
+    </script>
+</body>
+</html>

@@ -20,9 +20,9 @@ li, a {
 
 header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    padding: 20px;
     width: 100%;
     top: 0;
     z-index: 1000;
@@ -32,24 +32,23 @@ header {
 }
 
 .logo {
-    max-width: 150px;
-    max-height: 50px;
-    margin-right: auto;
+    max-width: 120px;
+    max-height: 40px;
     filter: drop-shadow(0 2px 4px rgba(255, 255, 255, 0.1));
 }
 
 .nav_links {
     list-style: none;
+    display: flex;
 }
 
 .nav_links li {
-    display: inline-block;
-    padding: 0 15px;
+    margin: 0 10px;
 }
 
 .nav_links li a {
-    transition: color 0.3s ease;
     font-size: 18px;
+    transition: color 0.3s ease;
 }
 
 .nav_links li a:hover {
@@ -59,23 +58,23 @@ header {
 /* Banner 1 section */
 .banner1 {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    height: 80vh;
-    margin-top: 100px; /* Adjusted for fixed header */
+    padding: 40px 20px;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(26, 26, 26, 0.8)), url('img/banner1-bg.jpg') no-repeat center center/cover;
 }
 
 .introText {
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
-    max-width: 50%;
+    max-width: 90%;
+    margin-bottom: 20px;
     animation: fadeIn 2s ease-in;
 }
 
 .name {
-    font-size: 36px;
+    font-size: 28px;
     font-weight: bold;
     color: #6fa3ef;
     text-shadow: 0 0 10px rgba(111, 163, 239, 0.7);
@@ -83,20 +82,10 @@ header {
 
 .personalPhoto {
     width: auto;
-    height: 450px;
+    height: 250px;
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     animation: float 3s ease-in-out infinite;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-@keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
 }
 
 /* Banner 2 section */
@@ -106,20 +95,19 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 50px 20px;
-    height: 400px;
+    padding: 40px 20px;
     background: linear-gradient(to bottom, #1a1a1a, #333333);
 }
 
 .banner2 h3 {
-    font-size: 32px;
+    font-size: 28px;
     margin-bottom: 20px;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
 .banner2 p {
-    font-size: 18px;
-    max-width: 70%;
+    font-size: 16px;
+    max-width: 90%;
     animation: fadeIn 2s ease-in;
 }
 
@@ -138,21 +126,20 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #333333; /* Adjust background color as needed */
-    padding: 50px 0;
+    background-color: #333333;
+    padding: 40px 0;
 }
 
 .slider {
     position: relative;
     width: 100%;
-    max-width: 1200px; /* Adjust as needed */
+    max-width: 1000px;
     margin: auto;
     overflow: hidden;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Box shadow */
-    border-radius: 8px; /* Rounded corners */
-    border: 2px solid transparent; /* Transparent border */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    border: 2px solid transparent;
 }
-
 
 .slider img {
     width: 100%;
@@ -169,8 +156,8 @@ img.displaySlide {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 2rem;
-    padding: 15px 20px; /* Adjust padding as needed */
+    font-size: 1.5rem;
+    padding: 10px 15px;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
@@ -200,13 +187,12 @@ img.displaySlide {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 50px 20px;
-    height: 500px;
+    padding: 40px 20px;
     background: linear-gradient(to bottom, #333333, #4d4d4d);
 }
 
 .banner3 h2 {
-    font-size: 32px;
+    font-size: 28px;
     margin-bottom: 20px;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
@@ -214,7 +200,7 @@ img.displaySlide {
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 30px;
     animation: fadeIn 2s ease-in;
 }
 
@@ -232,6 +218,7 @@ img.displaySlide {
 .social-icons i {
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
+
 /* Footer Styles */
 footer {
     background-color: #1a1a1a;
@@ -247,17 +234,18 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .footer-content p {
     margin: 0;
+    font-size: 14px;
 }
 
 .footer-content nav {
-    flex-grow: 1; /* Take remaining space */
-    text-align: right;
+    margin-top: 10px;
 }
 
 .footer-content nav ul {
@@ -267,7 +255,7 @@ footer {
 
 .footer-content nav ul li {
     display: inline-block;
-    margin-right: 10px;
+    margin: 0 5px;
 }
 
 .footer-content nav ul li a {
@@ -278,4 +266,64 @@ footer {
 
 .footer-content nav ul li a:hover {
     color: #6fa3ef;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .nav_links {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav_links li {
+        margin: 10px 0;
+    }
+
+    .banner1, .banner2, .banner3 {
+        padding: 20px;
+    }
+
+    .introText, .banner2 p {
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    .personalPhoto {
+        height: 200px;
+    }
+
+    .slider {
+        max-width: 90%;
+    }
+
+    .footer-content nav ul li {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav_links li a {
+        font-size: 16px;
+    }
+
+    .introText, .banner2 p {
+        font-size: 14px;
+    }
+
+    .personalPhoto {
+        height: 150px;
+    }
+
+    .banner3 h2 {
+        font-size: 24px;
+    }
+
+    .social-icons i {
+        font-size: 3em;
+    }
 }

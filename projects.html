@@ -12,7 +12,6 @@
         <nav>
             <ul class="nav_links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
                 <li><a href="experience.html">Experience</a></li>
                 <li><a href="projects.html">Projects</a></li>
             </ul>
@@ -85,19 +84,14 @@
     </footer>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Find the Contact link by its ID
+
             var contactLink = document.getElementById('contact-link');
-    
-            // Add a click event listener to the Contact link
+
             contactLink.addEventListener('click', function(event) {
-                // Prevent the default action (following the link)
                 event.preventDefault();
-    
-                // Display an alert or custom message
                 alert("The Contact page is currently under maintenance and not accessible.");
     
-                // Optionally, you can redirect to another page instead of showing an alert
-                // window.location.href = "under-maintenance.html";
+                
             });
         });
     </script>

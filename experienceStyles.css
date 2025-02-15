@@ -8,10 +8,10 @@ body {
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(to bottom, #000000, #1a1a1a, #333333);
     color: white;
-    min-height: 100vh; /* Ensure body covers the entire viewport */
-    margin: 0; /* Remove default body margin */
-    padding: 0; /* Remove default body padding */
-    overflow-x: hidden; /* Hide horizontal scrollbar */
+    min-height: 100vh; 
+    margin: 0; 
+    padding: 0; 
+    overflow-x: hidden; 
 }
 
 header {
@@ -48,19 +48,19 @@ header {
     transition: color 0.3s ease;
     font-size: 18px;
     color: white;
-    text-decoration: none; /* Add this line to remove underlines */
+    text-decoration: none; 
 }
 
 .nav_links li a:hover {
     color: #6fa3ef;
-    text-decoration: none; /* Add this line to remove underlines */
+    text-decoration: none; 
 }
 
 .title {
     font-size: 36px;
     color: white;
-    margin-top: 100px; /* Ensuring space between navbar and title */
-    margin-left: 10%; /* Aligning title to the left */
+    margin-top: 100px; 
+    margin-left: 10%; 
 }
 
 .content {
@@ -69,11 +69,11 @@ header {
     border-radius: 10px;
     width: 80%;
     max-width: 800px;
-    margin-top: calc(50vh - 250px); /* Adjusted to vertically center content */
+    margin-top: calc(50vh - 400px); 
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    z-index: 1; /* Ensure content appears above background */
+    z-index: 1; 
 }
 
 
@@ -121,6 +121,7 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+    margin-top: 50px;
 }
 
 .footer-content {
@@ -136,7 +137,7 @@ footer {
 }
 
 .footer-content nav {
-    flex-grow: 1; /* Take remaining space */
+    flex-grow: 1; 
     text-align: right;
 }
 

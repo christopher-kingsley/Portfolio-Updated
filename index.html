@@ -18,27 +18,43 @@
             </ul>
         </nav>
     </header>
-    <div class="banner1">
-        <p class="introText">Welcome! I'm <span class="name">Christopher Kingsley</span>,<br>
-            a passionate Computer Engineering student dedicated to innovation and growth.</p>
-        <img src="img/chrisphoto.jpg" alt="Christopher Kingsley" class="personalPhoto">
-    </div>
     
-    <div class="banner2">
-        <h3>A little about me</h3>
-        <p>I am from North Carolina and attend North Carolina A&T University. My passion for this field comes from my drive to discover a new world. I love to create and see my creations help others or inspire others to do more. </p>
-    </div>
-    <div class="slidingPhotos">
-        <div class="slider">
-            <div class="slides">
-                <img src="img/calculatorspreadsheet.png" alt="img1" class="slide">
-                <img src="img/nightlight.PNG" alt="img2" class="slide">
-                <img src="img/vhdldemo.png" alt="img3" class="slide">
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlighted">Christopher Kingsley</span></h1>
+            <p>A passionate <strong>Computer Engineering student</strong> dedicated to innovation and growth.</p>
+            <div class="hero-buttons">
+                <a href="projects.html" class="cta-button">Explore My Work</a>
+                <a href="https://www.linkedin.com/in/christopher-kingsley-ncat/" class="cta-button-alt">Contact Me</a>
             </div>
-            <button class="prev" onclick="prev();">&#10094;</button>
-            <button class="next" onclick="next();">&#10095;</button>
+        </div>
+        <div class="hero-image">
+            <img src="img/chrisphoto.jpg" alt="Christopher Kingsley" class="profile-photo">
         </div>
     </div>
+
+    
+    <section class="projects-section">
+        <div class="project-cards">
+            <div class="project-card">
+                <img src="img/vhdldemo.png" alt="Traffic Light Controller">
+                <h3>Traffic Light Controller</h3>
+                <p>Designed with VHDL, this project optimizes traffic flow using FSM logic.</p>
+            </div>
+            <div class="project-card">
+                <img src="img/calculatorspreadsheet.png" alt="Spreadsheet Calculator">
+                <h3>Spreadsheet Calculator</h3>
+                <p>A JavaScript-based calculator that supports dynamic spreadsheet functionalities.</p>
+            </div>
+            <div class="project-card">
+                <img src="img/systemMonitoringHPM.png" alt="Nightlight">
+                <h3>High Power Microwave Software</h3>
+                <p>UI creation working in correlation with a Raspberry Pi 3B+ board. </p>
+            </div>
+        </div>
+    </section>
+    
+    
     <div class="banner3">
         <h2>Socials</h2>
         <div class="social-icons">
@@ -50,6 +66,7 @@
             </a>
         </div>
     </div>
+    
     <footer>
         <div class="footer-content">
             <p>&copy; 2024 Christopher Kingsley. All rights reserved.</p>

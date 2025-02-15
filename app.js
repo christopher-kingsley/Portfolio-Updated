@@ -1,49 +1,41 @@
-
-const slides = document.querySelectorAll(".slides img");
-let slideIndex = 0;
-let intervalID = null;
-
-initializeSlider();
-
-function initializeSlider() {
-
-    if (slides.length > 0) {
-        slides[slideIndex].classList.add("displaySlide");
-        intervalID = setInterval(next, 8000);
-    }
-    
-}
-
-function showSlide(index) {
-
-    if(index >= slides.length) {
-        slideIndex = 0;
-    } else if(index < 0) {
-        slideIndex = slides.length - 1;
-    }
-
-    slides.forEach(slide=> {
-        slide.classList.remove("displaySlide");
+// Initialize all sliders on DOM content loaded
+document.addEventListener("DOMContentLoaded", () => {
+    const sliders = document.querySelectorAll('.slider');
+    sliders.forEach(slider => {
+      // Store an individual slide index for each slider
+      slider.slideIndex = 0;
+      const slides = slider.querySelectorAll('.slides img');
+      // Show only the first slide initially
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('displaySlide', i === 0);
+      });
     });
-    slides[slideIndex].classList.add("displaySlide");
-}
-
-function prev() {
-    slideIndex--;
-    showSlide(slideIndex);
-}
-
-function next() {
-    slideIndex++;
-    showSlide(slideIndex);
-}
-
-var contactLink = document.getElementById('contact-link');
-    
-contactLink.addEventListener('click', function(event) {
-                
-    event.preventDefault();
-    
-    alert("The Contact page is currently under maintenance and not accessible.");
-    
-});
+  });
+  
+  function showSlide(slider, index) {
+    const slides = slider.querySelectorAll('.slides img');
+    // Adjust index if out-of-bounds
+    if (index >= slides.length) {
+      slider.slideIndex = 0;
+    } else if (index < 0) {
+      slider.slideIndex = slides.length - 1;
+    } else {
+      slider.slideIndex = index;
+    }
+  
+    // Hide all slides, then show the current slide
+    slides.forEach(slide => slide.classList.remove("displaySlide"));
+    slides[slider.slideIndex].classList.add("displaySlide");
+  }
+  
+  function prev(button) {
+    // Get the slider container from the clicked button
+    const slider = button.closest('.slider');
+    showSlide(slider, slider.slideIndex - 1);
+  }
+  
+  function next(button) {
+    const slider = button.closest('.slider');
+    showSlide(slider, slider.slideIndex + 1);
+  }
+  

@@ -17,8 +17,117 @@
             </ul>
         </nav>
     </header>
-    <h2>Projects</h2>
-    <div class="projects">
+    <h2 class="projects-header">Projects</h2>
+<div class="projects">
+  <div class="project">
+    <h3>Project Ration App</h3>
+    <!-- Image Slider Container -->
+    <div class="slidingPhotos">
+      <div class="slider">
+        <div class="slides">
+          <img src="img/homescreenApp.PNG" alt="App Home Screen" class="slide displaySlide">
+          <img src="img/entryscreenApp.PNG" alt="Entry Screen">
+          <img src="img/drawerApp.PNG" alt="Drawer Navigation">
+          <img src="img/registerscreenApp.PNG" alt="Register Screen">
+        </div>
+        <!-- Navigation Buttons -->
+        <button class="prev" onclick="prev(this)">&#10094;</button>
+        <button class="next" onclick="next(this)">&#10095;</button>
+      </div>
+    </div>
+    <p>
+        I am developing a React Native app as a personal project,  
+        designed to let users share and explore recipes for meals and drinks. <br>  
+        Users can rate recipes, interact with others, and build a network of friends,  
+        creating a dynamic and engaging food community. <b>The project is currently in development.</b> 
+    </p>
+  </div>
+  
+
+  <div class="project">
+    <h3>HPM Device Project</h3>
+    <div class="slidingPhotos">
+        <div class="slider">
+          <div class="slides">
+            <img src="img/computerVitalsHPM.png" alt="Computer Vitals" class="slide displaySlide">
+            <img src="img/systemMonitoringHPM.png" alt="System Vitals">
+            <img src="img/loginHPM.png" alt="Login">
+            <img src="img/enclosureFrame.jpeg" alt="Enclosure Frame" >
+            <img src="img/enclosure.jpeg" alt="Enclosure">
+            <img src="img/enclosureCompleted.jpeg" alt="Enclosure Completed">
+          </div>
+          <button class="prev" onclick="prev(this)">&#10094;</button>
+        <button class="next" onclick="next(this)">&#10095;</button>
+        </div>
+    </div>
+    <p>
+        This project focuses on testing and monitoring a high-power microwave (HPM) device,  
+        with specialized software for real-time measurements and enhanced security. <br>  
+        Developed as part of my senior design course, the system ensures accurate data tracking  
+        while maintaining strict access control. <b>The project is currently in development.</b>   
+    </p>
+    
+  </div>
+
+  <div class="project">
+    <h3>FPGA Research</h3>
+    <div class="slidingPhotos">
+        <div class="slider">
+          <div class="slides">
+            <img src="img/getMeanQualityCount_Schematic.png" alt="Get Mean Schematic" class="slide displaySlide">
+            <img src="img/getPercentileQualityCount_Schematic.png" alt="Get Percentile Schematic">
+            <img src="img/DE-2i150board.png" alt="Development Board for Testing">
+          </div>
+          <button class="prev" onclick="prev(this)">&#10094;</button>
+        <button class="next" onclick="next(this)">&#10095;</button>
+        </div>
+    </div>
+    <p>
+        My current research explores the use of FPGA boards to accelerate data processing  
+        in bioinformatics. <br>  
+        By identifying workflow bottlenecks, we are optimizing computational efficiency  
+        through FPGA-based implementations, aiming to enhance processing speed  
+        for complex bioinformatics tasks. <b>The project is currently in development.</b>  
+    </p>
+  </div>
+
+        <div class="project">
+            <h3>Java Airplane Reservation System GUI</h3>
+            <img src="img/airplaneUI.png" alt="Java Airplane Reservation System Image">
+            <div class="project-links">
+                <a href="https://github.com/christopher-kingsley/Airplane-Reservation-System">Code on GitHub</a>
+            </div>
+            <p>
+                This Java-based GUI application simulates an airplane reservation system,  
+                allowing users to book, modify, and manage flight reservations. <br>  
+                The system ensures efficient seat allocation and provides a user-friendly  
+                interface for seamless interaction.  
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Java Greensboro Hotel GUI</h3>
+            <div class="slidingPhotos">
+                <div class="slider">
+                  <div class="slides">
+                    <img src="img/roomHotelUI.png" alt="Hotel Reservation Software" class="slide displaySlide">
+                    <img src="img/hotelui.png" alt="Hotel User Interface">
+                  </div>
+                  <button class="prev" onclick="prev(this)">&#10094;</button>
+                <button class="next" onclick="next(this)">&#10095;</button>
+                </div>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/christopher-kingsley/Greensboro_Hotel">Code on GitHub</a>
+            </div>
+            <p>
+                This Java-based hotel management system provides a graphical interface  
+                for handling room reservations, guest check-ins, and availability tracking. <br>  
+                Designed for efficiency, the system streamlines hotel operations,  
+                ensuring a seamless booking experience.  
+            </p>
+        </div>
+
         <div class="project">
             <h3>Simple REST API</h3>
             <img src="img/simplerestapi.png" alt="Simple REST API Screenshot">
@@ -41,7 +150,16 @@
         
         <div class="project">
             <h3>Traffic Light Controller</h3>
-            <img src="img/vhdldemo.png" alt="Traffic Light Controller Screenshot">
+            <div class="slidingPhotos">
+                <div class="slider">
+                  <div class="slides">
+                    <img src="img/vhdldemo.png" alt="Traffic-Light-Controller" class="slide displaySlide">
+                    <img src="img/de10liteboard.png" alt="Testing Board DE-10 Lite">
+                  </div>
+                  <button class="prev" onclick="prev(this)">&#10094;</button>
+                <button class="next" onclick="next(this)">&#10095;</button>
+                </div>
+            </div>
             <div class="project-links">
                 <a href="https://github.com/KingGhostZ/Traffic-Light-Controller">Code on GitHub</a>
             </div>
@@ -51,7 +169,16 @@
         
         <div class="project">
             <h3>Vending Machine Controller</h3>
-            <img src="img/vendingMachine.png" alt="Vending Machine Controller Screenshot">
+            <div class="slidingPhotos">
+                <div class="slider">
+                  <div class="slides">
+                    <img src="img/vendingMachine.png" alt="Vending-Machine-Controller" class="slide displaySlide">
+                    <img src="img/de10liteboard.png" alt="Testing Board DE-10 Lite">
+                  </div>
+                  <button class="prev" onclick="prev(this)">&#10094;</button>
+                <button class="next" onclick="next(this)">&#10095;</button>
+                </div>
+            </div>
             <div class="project-links">
                 <a href="https://github.com/KingGhostZ/Vending-Machine-Controller">Code on GitHub</a>
             </div>
@@ -75,7 +202,6 @@
             <nav>
                 <ul class="nav_links">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
                     <li><a href="experience.html">Experience</a></li>
                     <li><a href="projects.html">Projects</a></li>
                 </ul>
@@ -95,5 +221,6 @@
             });
         });
     </script>
+    <script src="app.js"></script>
 </body>
 </html>

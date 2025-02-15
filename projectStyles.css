@@ -58,45 +58,54 @@ header {
 
 .projects-header {
     text-align: center;
-    margin-top: 40px; /* Adjust the margin top as needed */
+    margin-top: 40px; /* Adjust as needed */
     margin-bottom: 20px;
     font-size: 36px;
-}
-
-.projects {
+  }
+  
+  /* Container for all projects */
+  .projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 20px;
-}
-
-.project {
+  }
+  
+  /* Default: full width for mobile devices */
+  .project {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 8px;
     padding: 20px;
-    margin: 10px;
-    width: calc(50% - 20px); /* Two projects per row, adjust as needed */
+    margin: 10px 0;
+    width: 100%;
+    max-width: 600px;
+    min-height: 380px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-}
-
-.project h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .project h3 {
     font-size: 24px;
     margin-bottom: 10px;
-}
-
-.project img {
+  }
+  
+  .project img {
     max-width: 100%;
-    height: auto;
+    max-height: 300px; /* Prevents images from making sections too tall */
+    object-fit: contain;
     border-radius: 8px;
     margin-bottom: 10px;
-}
-
-.project-links {
+  }
+  
+  .project-links {
     margin-bottom: 10px;
-}
-
-.project-links a {
+  }
+  
+  .project-links a {
     display: inline-block;
     padding: 5px 10px;
     background-color: #6fa3ef;
@@ -105,11 +114,81 @@ header {
     border-radius: 4px;
     margin-right: 10px;
     transition: background-color 0.3s ease;
+  }
+  
+  .project-links a:hover {
+    background-color: #4b8be0;
+  }
+  
+  /* Image Slider */
+  .slider {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    height: 300px; /* Increased the slider height */
+    margin: auto;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+  
+  .slides {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .slides img {
+    width: 100%;
+    max-height: 300px; /* Match the slider container’s new height */
+    object-fit: contain;
+    display: none;
+    border-radius: 8px;
 }
 
-.project-links a:hover {
-    background-color: #4b8be0;
+.slides .displaySlide {
+    display: block;
 }
+  
+  /* Slider Buttons */
+  .slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  /* Fade Animation */
+  @keyframes fade {
+    from {
+      opacity: 0.5;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Two-column layout on desktops/laptops */
+  @media (min-width: 768px) {
+    .project {
+      width: calc(50% - 20px); /* Two projects per row with spacing */
+      margin: 10px;
+    }
+  }
 /* Footer Styles */
 footer {
     background-color: #1a1a1a;

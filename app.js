@@ -2,10 +2,8 @@
 document.addEventListener("DOMContentLoaded", () => {
     const sliders = document.querySelectorAll('.slider');
     sliders.forEach(slider => {
-      // Store an individual slide index for each slider
       slider.slideIndex = 0;
       const slides = slider.querySelectorAll('.slides img');
-      // Show only the first slide initially
       slides.forEach((slide, i) => {
         slide.classList.toggle('displaySlide', i === 0);
       });
@@ -14,7 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
   
   function showSlide(slider, index) {
     const slides = slider.querySelectorAll('.slides img');
-    // Adjust index if out-of-bounds
     if (index >= slides.length) {
       slider.slideIndex = 0;
     } else if (index < 0) {
@@ -39,3 +36,17 @@ document.addEventListener("DOMContentLoaded", () => {
     showSlide(slider, slider.slideIndex + 1);
   }
   
+
+  function openVideo() {
+    document.getElementById("videoPopup").style.display = "flex";
+    document.getElementById("popupVideo").play();
+  }
+
+  function closeVideo() {
+    let videoPopup = document.getElementById("videoPopup");
+    let video = document.getElementById("popupVideo");
+
+    videoPopup.style.display = "none";
+    video.pause();
+    video.currentTime = 0; // Reset video to the beginning
+  }

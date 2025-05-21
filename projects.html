@@ -1,226 +1,420 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <link rel="stylesheet" href="projectStyles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects — Christopher Kingsley</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="projectStyles.css" />
 </head>
 <body>
-    <header>
-        <img class="logo" src="img/logo.png" alt="Logo">
-        <nav>
-            <ul class="nav_links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="projects.html">Projects</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <img class="logo" src="img/logo.png" alt="Logo" />
+    <nav>
+      <ul class="nav_links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
     <h2 class="projects-header">Projects</h2>
-<div class="projects">
-  <div class="project">
-    <h3>Project Ration App</h3>
-    <!-- Image Slider Container -->
-    <div class="slidingPhotos">
-      <div class="slider">
-        <div class="slides">
-          <img src="img/homescreenApp.PNG" alt="App Home Screen" class="slide displaySlide">
-          <img src="img/entryscreenApp.PNG" alt="Entry Screen">
-          <img src="img/drawerApp.PNG" alt="Drawer Navigation">
-          <img src="img/registerscreenApp.PNG" alt="Register Screen">
+    <div class="projects">
+
+      
+      <div class="project">
+        <h3>Project Ration App</h3>
+        <div class="project-media">
+          <div class="slider">
+            <div class="slides">
+              <img src="img/homescreenApp.PNG" alt="App Home Screen" class="slide displaySlide"/>
+              <img src="img/entryscreenApp.PNG" alt="Entry Screen" class="slide"/>
+              <img src="img/drawerApp.PNG" alt="Drawer Navigation" class="slide"/>
+              <img src="img/registerscreenApp.PNG" alt="Register Screen" class="slide"/>
+            </div>
+            <button class="prev" onclick="prev(this)">&#10094;</button>
+            <button class="next" onclick="next(this)">&#10095;</button>
+          </div>
         </div>
-        <!-- Navigation Buttons -->
-        <button class="prev" onclick="prev(this)">&#10094;</button>
-        <button class="next" onclick="next(this)">&#10095;</button>
+        <div class="project-content">
+          <p class="intro">
+            A React Native mobile app that lets users share, rate, and explore recipes within a dynamic food community.
+          </p>
+          <ul class="highlights">
+            <li>Built with Expo CLI and React Redux for state management.</li>
+            <li>Implemented REST API integration for dynamic recipe loading.</li>
+            <li>Designed a card‐based home feed with full save/unsave logic.</li>
+            <li>User authentication via secure JWT tokens.</li>
+          </ul>
+          <p class="status"><strong>Status:</strong> In development</p>
+        </div>
+      </div>
+
+      
+      <div class="project">
+        <h3>D.M.A.C. Project</h3>
+        <div class="project-media">
+          <div class="slider">
+            <div class="slides">
+              <img src="img/IMG_4332 (1).png" alt="Senior Design Expo" class="slide displaySlide"/>
+              <img src="img/IMG_5148 (1).png" alt="Senior Design Expo" class="slide"/>
+              <img src="img/IMG_5151.png" alt="Senior Design Expo" class="slide"/>
+              <img src="img/IMG_4331.png" alt="Senior Design Expo" class="slide"/>
+              <img src="img/computerVitalsHPM.png" alt="Computer Vitals" class="slide"/>
+              <img src="img/systemMonitoringHPM.png" alt="System Vitals" class="slide"/>
+              <img src="img/loginHPM.png" alt="Login" class="slide"/>
+              <img src="img/enclosureFrame.jpeg" alt="Enclosure Frame" class="slide"/>
+              <img src="img/enclosure.jpeg" alt="Enclosure" class="slide"/>
+              <img src="img/enclosureCompleted.jpeg" alt="Enclosure Completed" class="slide"/>
+            </div>
+            <button class="prev" onclick="prev(this)">&#10094;</button>
+            <button class="next" onclick="next(this)">&#10095;</button>
+          </div>
+        </div>
+        <div class="project-content">
+          <p class="intro">
+            A Directed Microwave Anti-drone Countermeasure.
+          </p>
+          <ul class="highlights">
+            <li>Developed in senior design: Python GUI on Raspberry Pi for sensor data display.</li>
+            <li>Integrated RFID + PIN authentication for operator access.</li>
+            <li>Designed low-voltage power and signal circuits; soldered relays and sensors.</li>
+            <li>Ensured data integrity with automated logging and alerting.</li>
+          </ul>
+          <p class="status"><strong>Status:</strong> Completed</p>
+        </div>
+      </div>
+
+      
+    <div class="project">
+    <h3>ESP32 WROVER IoT Dashboard</h3>
+
+    <div class="project-media">
+    <div class="slider">
+      <div class="slides">
+        <img src="img/embeddedTempProject.png" alt="ESP32 Sensor Readings" class="slide displaySlide"/>
+        <img src="img/embeddedsystemclouddashboard.png" alt="Web Dashboard" class="slide"/>
+      </div>
+      <button class="prev" onclick="prev(this)">&#10094;</button>
+      <button class="next" onclick="next(this)">&#10095;</button>
+    </div>
+  </div>
+
+  <div class="project-content">
+    <p class="intro">
+      A secure IoT monitoring system built on the ESP32 WROVER for real-time temperature and humidity tracking.
+    </p>
+    <ul class="highlights">
+      <li>DS18B20 sensor reads ambient temperature and humidity.</li>
+      <li>Onboard keypad protects data behind a 6-digit passcode.</li>
+      <li>Publishes readings to HiveMQ Cloud over MQTT with TLS.</li>
+      <li>Web dashboard visualizes live data and historical trends.</li>
+    </ul>
+    <p class="status"><strong>Status:</strong> Completed</p>
+  </div>
+
+  <div class="project-links">
+    <a href="https://github.com/christopher-kingsley/embeddedSystemsTempCloudProject" target="_blank">Code on GitHub</a>
+  </div>
+</div>
+
+
+      <div class="project">
+        <h3>FPGA-Accelerated FastQC Research</h3>
+        <div class="project-media">
+          <div class="slider">
+            <div class="slides">
+              <img src="img/getMeanQualityCount_Schematic.png" alt="Mean Schematic" class="slide displaySlide"/>
+              <img src="img/getPercentileQualityCount_Schematic.png" alt="Percentile Schematic" class="slide"/>
+              <img src="img/DE-2i150board.png" alt="Testing Board" class="slide"/>
+              <img src="img/parallelOptimizedAccumulatorgetPercentile.png" alt="Testing Board" class="slide"/>
+              <img src="img/prefixaccumulatordesign.png" alt="Testing Board" class="slide"/>
+            </div>
+            <button class="prev" onclick="prev(this)">&#10094;</button>
+            <button class="next" onclick="next(this)">&#10095;</button>
+          </div>
+        </div>
+        <div class="project-content">
+          <p class="intro">
+            Research to accelerate FastQC percentile calculations via FPGA hardware for real-time genomic QC.
+          </p>
+          <ul class="highlights">
+            <li>Designed pipelined parallel-prefix accumulator in VHDL on Cyclone IV FPGA.</li>
+            <li>Applied loop unrolling and fixed-point arithmetic for >90% speedup.</li>
+            <li>Implemented 150-entry on-chip RAM pipeline for deterministic timing.</li>
+            <li>Benchmarking against Java routines showed sub-microsecond latency.</li>
+          </ul>
+          <p class="status"><strong>Status:</strong> Completed</p>
+        </div>
+<div class="project-links">
+    <a href="https://github.com/christopher-kingsley/bioinformatics-research" target="_blank">Code on GitHub</a>
+  </div>
+
+      </div>
+
+      <div class="project">
+        <h3>Java Airplane Reservation GUI</h3>
+        <div class="project-media">
+          <img src="img/airplaneUI.png" alt="Airplane Reservation UI"/>
+        </div>
+        <div class="project-content">
+          <p class="intro">
+            A Java Swing application simulating flight booking with seat allocation and reservation management.
+          </p>
+          <ul class="highlights">
+            <li>CRUD operations for passenger records and flight data.</li>
+            <li>Dynamic seat map with real-time availability updates.</li>
+            <li>Exception handling for invalid input and overbooking.</li>
+            <li>Unit tested using JUnit for core booking logic.</li>
+          </ul>
+          <p class="status"><strong>Status:</strong> Completed</p>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/christopher-kingsley/Airplane-Reservation-System" target="_blank">Code on GitHub</a>
+        </div>
+      </div>
+
+      
+      <div class="project">
+        <h3>Java Greensboro Hotel GUI</h3>
+        <div class="project-media">
+          <div class="slider">
+            <div class="slides">
+              <img src="img/roomHotelUI.png" alt="Room Selection UI" class="slide displaySlide"/>
+              <img src="img/hotelui.png" alt="Hotel User Interface" class="slide"/>
+            </div>
+            <button class="prev" onclick="prev(this)">&#10094;</button>
+            <button class="next" onclick="next(this)">&#10095;</button>
+          </div>
+        </div>
+        <div class="project-content">
+          <p class="intro">
+            A Java-based hotel management GUI for room reservations, check-ins, and availability tracking.
+          </p>
+          <ul class="highlights">
+            <li>Custom Swing components for date pickers and room maps.</li>
+            <li>File-based persistence with CSV export/import.</li>
+            <li>Input validation for guest details and payment info.</li>
+            <li>Responsive layout to accommodate different screen sizes.</li>
+          </ul>
+          <p class="status"><strong>Status:</strong> Completed</p>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/christopher-kingsley/Greensboro_Hotel" target="_blank">Code on GitHub</a>
+        </div>
+      </div>
+
+      
+      <div class="project">
+        <h3>Simple REST API</h3>
+        <div class="project-media">
+          <img src="img/simplerestapi.png" alt="REST API Screenshot"/>
+        </div>
+        <div class="project-content">
+          <p class="intro">
+            A Node.js & Express.js API demonstrating CRUD operations on MongoDB collections.
+          </p>
+          <ul class="highlights">
+            <li>Endpoints: GET, POST, PUT, DELETE with JSON request/response.</li>
+            <li>Data validation and error handling with middleware.</li>
+            <li>Tested using Postman collections.</li>
+            <li>Environment configuration via dotenv.</li>
+          </ul>
+          <p class="status"><strong>Status:</strong> Completed</p>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/christopher-kingsley/Simple-REST-API" target="_blank">Code on GitHub</a>
+        </div>
+      </div>
+
+    
+      <div class="project">
+        <h3>Spreadsheet Based Calculator</h3>
+        <div class="project-media">
+          <img src="img/calculatorspreadsheet.png" alt="Spreadsheet Calculator"/>
+        </div>
+        <div class="project-content">
+          <p class="intro">
+            A web-based calculator that logs each entry in a dynamic HTML table until cancelled.
+          </p>
+          <ul class="highlights">
+            <li>JavaScript event handlers capture and process user input.</li>
+            <li>DOM manipulation to append new rows on each calculation.</li>
+            <li>Cancel button resets session without page reload.</li>
+            <li>Styled with CSS Grid for responsive layout.</li>
+          </ul>
+          <p class="status"><strong>Status:</strong> Completed</p>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/KingGhostZ/Calculator" target="_blank">Code on GitHub</a>
+        </div>
+      </div>
+
+      
+      <div class="project">
+        <h3>Traffic Light Controller (VHDL)</h3>
+        <div class="project-media">
+          <div class="slider">
+            <div class="slides">
+              <img src="img/vhdldemo.png" alt="Traffic Light FSM" class="slide displaySlide"/>
+              <img src="img/de10liteboard.png" alt="DE-10 Lite Board" class="slide"/>
+            </div>
+            <button class="prev" onclick="prev(this)">&#10094;</button>
+            <button class="next" onclick="next(this)">&#10095;</button>
+          </div>
+        </div>
+        <div class="project-content">
+          <p class="intro">
+            A finite-state machine in VHDL implementing standard and turn-lane signals based on sensor inputs.
+          </p>
+          <ul class="highlights">
+            <li>State definitions for Red, Yellow, Green, and Turn phases.</li>
+            <li>Testbench simulation to verify timing and transitions.</li>
+            <li>Targeted to DE-10 Lite development board.</li>
+            <li>Debounce logic for sensor inputs.</li>
+          </ul>
+          <p class="status"><strong>Status:</strong> Completed</p>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/KingGhostZ/Traffic-Light-Controller" target="_blank">Code on GitHub</a>
+        </div>
+      </div>
+
+      
+      <div class="project">
+        <h3>Vending Machine Controller (VHDL)</h3>
+        <div class="project-media">
+          <div class="slider">
+            <div class="slides">
+              <img src="img/vendingMachine.png" alt="Vending Machine FSM" class="slide displaySlide"/>
+              <img src="img/de10liteboard.png" alt="DE-10 Lite Board" class="slide"/>
+            </div>
+            <button class="prev" onclick="prev(this)">&#10094;</button>
+            <button class="next" onclick="next(this)">&#10095;</button>
+          </div>
+        </div>
+        <div class="project-content">
+          <p class="intro">
+            A VHDL design for a coin-accepting vending machine supporting nickels, dimes, and quarters.
+          </p>
+          <ul class="highlights">
+            <li>FSM for product selection and change dispensing.</li>
+            <li>Coin counter with overflow protection.</li>
+            <li>Tests on DE-10 Lite board for real hardware verification.</li>
+            <li>User feedback via 7-segment display.</li>
+          </ul>
+          <p class="status"><strong>Status:</strong> Completed</p>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/KingGhostZ/Vending-Machine-Controller" target="_blank">Code on GitHub</a>
+        </div>
+      </div>
+
+     
+      <div class="project">
+        <h3>Lawn Mower Warehouse Manager</h3>
+        <div class="project-media">
+          <img src="img/warehousePhoto.png" alt="Warehouse Manager UI"/>
+        </div>
+        <div class="project-content">
+          <p class="intro">
+            A Java application to categorize and export lawn mower inventory from input files.
+          </p>
+          <ul class="highlights">
+            <li>Parses CSV inputs into category-based lists.</li>
+            <li>Exports filtered data to text files for client use.</li>
+            <li>Command-line interface with menu-driven options.</li>
+            <li>Exception handling for malformed inputs.</li>
+          </ul>
+          <p class="status"><strong>Status:</strong> Completed</p>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/KingGhostZ/Mower-Warehouse" target="_blank">Code on GitHub</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+ 
+  <div id="lightboxOverlay" class="lightbox-overlay" hidden>
+    <div class="lightbox-content">
+      <button class="lightbox-close">&times;</button>
+      <div class="lightbox-slider">
+        <div class="lightbox-slides"></div>
+        <button class="prev" onclick="lightPrev()">&lsaquo;</button>
+        <button class="next" onclick="lightNext()">&rsaquo;</button>
       </div>
     </div>
-    <p>
-        I am developing a React Native app as a personal project,  
-        designed to let users share and explore recipes for meals and drinks. <br>  
-        Users can rate recipes, interact with others, and build a network of friends,  
-        creating a dynamic and engaging food community. <b>The project is currently in development.</b> 
-    </p>
   </div>
-  
 
-  <div class="project">
-    <h3>HPM Device Project</h3>
-    <div class="slidingPhotos">
-        <div class="slider">
-          <div class="slides">
-            <img src="img/computerVitalsHPM.png" alt="Computer Vitals" class="slide displaySlide">
-            <img src="img/systemMonitoringHPM.png" alt="System Vitals">
-            <img src="img/loginHPM.png" alt="Login">
-            <img src="img/enclosureFrame.jpeg" alt="Enclosure Frame" >
-            <img src="img/enclosure.jpeg" alt="Enclosure">
-            <img src="img/enclosureCompleted.jpeg" alt="Enclosure Completed">
-          </div>
-          <button class="prev" onclick="prev(this)">&#10094;</button>
-        <button class="next" onclick="next(this)">&#10095;</button>
-        </div>
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Christopher Kingsley. All rights reserved.</p>
+      <nav>
+        <ul class="nav_links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </nav>
     </div>
-    <p>
-        This project focuses on testing and monitoring a high-power microwave (HPM) device,  
-        with specialized software for real-time measurements and enhanced security. <br>  
-        Developed as part of my senior design course, the system ensures accurate data tracking  
-        while maintaining strict access control. <b>The project is currently in development.</b>   
-    </p>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>
+ 
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll('.slider').forEach(slider => {
+        slider.slideIndex = 0;
+        const slides = slider.querySelectorAll('.slides img');
+        slides.forEach((s,i) => s.classList.toggle('displaySlide', i===0));
+      });
+    });
+    function showSlide(slider, idx) {
+      const slides = slider.querySelectorAll('.slides img');
+      slider.slideIndex = (idx + slides.length) % slides.length;
+      slides.forEach((s,i)=>s.classList.toggle('displaySlide', i===slider.slideIndex));
+    }
+    function prev(btn) { showSlide(btn.closest('.slider'), btn.closest('.slider').slideIndex - 1); }
+    function next(btn) { showSlide(btn.closest('.slider'), btn.closest('.slider').slideIndex + 1); }
+
     
-  </div>
+    const lightOverlay = document.getElementById('lightboxOverlay');
+    const lightSlides   = document.querySelector('.lightbox-slides');
+    let lightImgs = [], lightIdx = 0;
 
-  <div class="project">
-    <h3>FPGA Research</h3>
-    <div class="slidingPhotos">
-        <div class="slider">
-          <div class="slides">
-            <img src="img/getMeanQualityCount_Schematic.png" alt="Get Mean Schematic" class="slide displaySlide">
-            <img src="img/getPercentileQualityCount_Schematic.png" alt="Get Percentile Schematic">
-            <img src="img/DE-2i150board.png" alt="Development Board for Testing">
-          </div>
-          <button class="prev" onclick="prev(this)">&#10094;</button>
-        <button class="next" onclick="next(this)">&#10095;</button>
-        </div>
-    </div>
-    <p>
-        My current research explores the use of FPGA boards to accelerate data processing  
-        in bioinformatics. <br>  
-        By identifying workflow bottlenecks, we are optimizing computational efficiency  
-        through FPGA-based implementations, aiming to enhance processing speed  
-        for complex bioinformatics tasks. <b>The project is currently in development.</b>  
-    </p>
-  </div>
-
-        <div class="project">
-            <h3>Java Airplane Reservation System GUI</h3>
-            <img src="img/airplaneUI.png" alt="Java Airplane Reservation System Image">
-            <div class="project-links">
-                <a href="https://github.com/christopher-kingsley/Airplane-Reservation-System">Code on GitHub</a>
-            </div>
-            <p>
-                This Java-based GUI application simulates an airplane reservation system,  
-                allowing users to book, modify, and manage flight reservations. <br>  
-                The system ensures efficient seat allocation and provides a user-friendly  
-                interface for seamless interaction.  
-            </p>
-        </div>
-
-        <div class="project">
-            <h3>Java Greensboro Hotel GUI</h3>
-            <div class="slidingPhotos">
-                <div class="slider">
-                  <div class="slides">
-                    <img src="img/roomHotelUI.png" alt="Hotel Reservation Software" class="slide displaySlide">
-                    <img src="img/hotelui.png" alt="Hotel User Interface">
-                  </div>
-                  <button class="prev" onclick="prev(this)">&#10094;</button>
-                <button class="next" onclick="next(this)">&#10095;</button>
-                </div>
-            </div>
-            <div class="project-links">
-                <a href="https://github.com/christopher-kingsley/Greensboro_Hotel">Code on GitHub</a>
-            </div>
-            <p>
-                This Java-based hotel management system provides a graphical interface  
-                for handling room reservations, guest check-ins, and availability tracking. <br>  
-                Designed for efficiency, the system streamlines hotel operations,  
-                ensuring a seamless booking experience.  
-            </p>
-        </div>
-
-        <div class="project">
-            <h3>Simple REST API</h3>
-            <img src="img/simplerestapi.png" alt="Simple REST API Screenshot">
-            <div class="project-links">
-                <a href="https://github.com/christopher-kingsley/Simple-REST-API">Code on GitHub</a>
-            </div>
-            <p>Here in the MongoDB we utilized Postman to manipulate data. </p>
-            <p>The data is represented by JSON values within the database.</p>
-        </div>
-
-        <div class="project">
-            <h3>Spreadsheet Based Calculator</h3>
-            <img src="img/calculatorspreadsheet.png" alt="Calculator Screenshot">
-            <div class="project-links">
-                <a href="https://github.com/KingGhostZ/Calculator">Code on GitHub</a>
-            </div>
-            <p>This calculator will continue to take input until the cancel button is pressed. </p>
-            <p>Each time a user presses submit, the table will update and compute new information <br>for the user. </p>
-        </div>
-        
-        <div class="project">
-            <h3>Traffic Light Controller</h3>
-            <div class="slidingPhotos">
-                <div class="slider">
-                  <div class="slides">
-                    <img src="img/vhdldemo.png" alt="Traffic-Light-Controller" class="slide displaySlide">
-                    <img src="img/de10liteboard.png" alt="Testing Board DE-10 Lite">
-                  </div>
-                  <button class="prev" onclick="prev(this)">&#10094;</button>
-                <button class="next" onclick="next(this)">&#10095;</button>
-                </div>
-            </div>
-            <div class="project-links">
-                <a href="https://github.com/KingGhostZ/Traffic-Light-Controller">Code on GitHub</a>
-            </div>
-            <p>Built a VHDL based traffic light controller that has the red, yellow, and green light.</p>
-            <p>This utilizes a finite state machine that would only activate the turn lanes or other directions based off of sensors.</p>
-        </div>
-        
-        <div class="project">
-            <h3>Vending Machine Controller</h3>
-            <div class="slidingPhotos">
-                <div class="slider">
-                  <div class="slides">
-                    <img src="img/vendingMachine.png" alt="Vending-Machine-Controller" class="slide displaySlide">
-                    <img src="img/de10liteboard.png" alt="Testing Board DE-10 Lite">
-                  </div>
-                  <button class="prev" onclick="prev(this)">&#10094;</button>
-                <button class="next" onclick="next(this)">&#10095;</button>
-                </div>
-            </div>
-            <div class="project-links">
-                <a href="https://github.com/KingGhostZ/Vending-Machine-Controller">Code on GitHub</a>
-            </div>
-            <p>Built a VHDL based vending machine that can take quarters, dimes, and nickels.</p>
-            <p>It has soda and candy as different options that both cost two different amounts of money.</p>
-        </div>
-        
-        <div class="project">
-            <h3>Lawn Mower Warehouse</h3>
-            <img src="img/warehousePhoto.png" alt="Lawn Mower Warehouse Screenshot">
-            <div class="project-links">
-                <a href="https://github.com/KingGhostZ/Mower-Warehouse">Code on GitHub</a>
-            </div>
-            <p>Built a Java based warehouse manager for lawn mowers that can take in a file of inputs and classify them into different categories.</p>
-            <p>The output of this program writes it to a text file that the user can export depending on the types of mowers that they are requesting.</p>
-        </div>
-    </div>
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2024 Christopher Kingsley. All rights reserved.</p>
-            <nav>
-                <ul class="nav_links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="experience.html">Experience</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                </ul>
-            </nav>
-        </div>
-    </footer>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-
-            var contactLink = document.getElementById('contact-link');
-
-            contactLink.addEventListener('click', function(event) {
-                event.preventDefault();
-                alert("The Contact page is currently under maintenance and not accessible.");
-    
-                
-            });
+    document.querySelectorAll('.project-media img').forEach(img => {
+      img.style.cursor = 'pointer';
+      img.onclick = () => {
+        const siblings = img.closest('.project').querySelectorAll('.project-media img');
+        lightImgs = Array.from(siblings);
+        lightSlides.innerHTML = '';
+        lightImgs.forEach((si,i) => {
+          const clone = si.cloneNode();
+          clone.classList.toggle('active', i===lightIdx);
+          lightSlides.appendChild(clone);
         });
-    </script>
-    <script src="app.js"></script>
+        lightIdx = Array.from(siblings).indexOf(img);
+        lightOverlay.hidden = false;
+        updateLight();
+      };
+    });
+
+    function lightPrev() { lightIdx = (lightIdx - 1 + lightImgs.length) % lightImgs.length; updateLight(); }
+    function lightNext() { lightIdx = (lightIdx + 1) % lightImgs.length; updateLight(); }
+    function updateLight() {
+      document.querySelectorAll('.lightbox-slides img')
+              .forEach((img,i)=>img.classList.toggle('active', i===lightIdx));
+    }
+
+    document.querySelector('.lightbox-close').onclick = () => lightOverlay.hidden = true;
+    lightOverlay.onclick = e => { if(e.target===lightOverlay) lightOverlay.hidden = true; };
+  </script>
 </body>
 </html>

@@ -1,116 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experience</title>
-    <link rel="stylesheet" href="experienceStyles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experience — Christopher Kingsley</title>
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="experienceStyles.css" />
 </head>
 <body>
-    <header>
-        <img class="logo" src="img/logo.png" alt="Logo">
-        <nav>
-            <ul class="nav_links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="projects.html">Projects</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="content">
-        <div class="education">
-            <h2>Education</h2>
-            <p>North Carolina A&T State University | Greensboro, NC | May 2025</p>
-            <p>B. S. Computer Engineering | Cumulative GPA: 3.55 | Chancellor’s List Spring 2023</p>
-        </div>
-        <div class="work-experience">
-            <h2>Work Experience</h2>
-            <div class="job">
-                <h3>Undergraduate Researcher | North Carolina A&T State University | August 2024 - Present</h3>
-                <p>Bioinformatics Software Researcher</p>
-                <ul>
-                    <li>Conducted in-depth analysis of bioinformatics workflows to identify computational bottlenecks and inefficiencies.</li>
-                    <li>Diagnosed performance limitations in bioinformatics software, developing potential solutions to optimize execution speed.</li>
-                    <li>Designed and implemented VHDL-based hardware acceleration techniques to compare processing speeds against traditional software execution.</li>
-                    <li>Evaluated and benchmarked hardware-accelerated algorithms, assessing performance improvements over standard software-based methods.</li>
-                </ul>
-            </div>            
-            <div class="job">
-                <h3>Public Works Commission (PWC) | Fayetteville, NC | May 2023 - July 2023</h3>
-                <p>IT Applications Intern</p>
-                <ul>
-                    <li>Conducted an in-depth analysis of Oracle's Human Capital Management Recruiting Booster, resulting in a comprehensive cost-benefit assessment presented to the board.</li>
-                    <li>Collaborated with fellow Application Specialists to strategize and execute the replication process of HCM for the seamless integration of Oracle Guided Learning.</li>
-                    <li>Spearheaded the role of Project Manager for the successful implementation of Oracle Guided Learning within the Human Capital Management software framework.</li>
-                    <li>Played a pivotal role in facilitating Single Sign-On integration for Oracle Guided Learning in conjunction with the Infrastructure team.</li>
-                </ul>
-            </div>
-            <div class="job">
-                <h3>Public Works Commission (PWC) | Fayetteville, NC | May 2022 - July 2022</h3>
-                <p>IT Infrastructure Intern</p>
-                <ul>
-                    <li>Configured Cisco Switches to facilitate the successful implementation of new hardware and enhance internet reliability for the city.</li>
-                    <li>Collaborated with fellow IT professionals to coordinate plans for upcoming events and deliver client support.</li>
-                    <li>Uploaded operating systems and configured servers for prospective cloud projects, providing the IT department with a testing environment.</li>
-                    <li>Efficiently decommissioned hardware, meticulously documented pertinent information, and facilitated the transport of hardware to new locations using departmental vehicles.</li>
-                </ul>
-            </div>
-        </div>
-        <div class="skills">
-            <h2>Skills</h2>
+  <header>
+    <img class="logo" src="img/logo.png" alt="Logo" />
+    <nav>
+      <ul class="nav_links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="experience.html" class="active">Experience</a></li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="summary">
+      <h2>About Me</h2>
+      <p>
+        I’m a Computer Engineering graduate passionate about FPGA design,
+        embedded systems, and full-stack development. Below is a timeline of
+        my research and internship experiences, followed by my core skills.
+      </p>
+    </section>
+
+    <section class="education">
+      <h2>Education</h2>
+      <p>
+        <strong>North Carolina A&amp;T State University</strong> |
+        Greensboro, NC | May 2025<br />
+        B.S. Computer Engineering | GPA 3.56 
+      </p>
+    </section>
+
+    <section class="work-experience">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="entry fade-in">
+          <div class="date">Aug 2024 – May 2025</div>
+          <div class="content">
+            <h3>Undergraduate Researcher</h3>
+            <p>
+              As a Bioinformatics Software & Hardware Researcher, I led an
+              initiative to accelerate FastQC computations by analyzing legacy
+              Java routines and designing a parallel FPGA pipeline for real-time
+              genomic quality control.
+            </p>
             <ul>
-                <div class="skills">
-                    <h2>Technical Skills</h2>
-                    <ul>
-                        <li>Java</li>
-                        <li>Python</li>
-                        <li>C++</li>
-                        <li>JavaScript</li>
-                        <li>SQL</li>
-                        <li>ARM Assembly</li>
-                        <li>VHDL</li>
-                        <li>SystemVerilog</li>
-                        <li>React Native</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>PostgreSQL</li>
-                        <li>Node.js</li>
-                        <li>Express.js</li>
-                        <li>MongoDB</li>
-                        <li>Linux (Terminal & Scripting)</li>
-                        <li>Git & Version Control</li>
-                        <li>Bioinformatics Workflow Optimization</li>
-                        <li>Hardware Acceleration & FPGA Design</li>
-                        <li>Digital Circuit Design & Analysis</li>
-                    </ul>
-                </div>
-                
+              <li>
+                Profiled and analyzed legacy FastQC Java routines using timing
+                instrumentation to pinpoint performance bottlenecks.
+              </li>
+              <li>
+                Reduced core computation time by over 80% and boosted throughput
+                by over 90% with a pipelined parallel-prefix accumulator in
+                VHDL on Cyclone IV FPGA.
+              </li>
+              <li>
+                Applied loop unrolling, fixed-point arithmetic, and optimized
+                on-chip RAM access to guarantee sub-microsecond runtimes.
+              </li>
+              <li>
+                Authored technical documentation and delivered monthly
+                presentations, culminating in an IEEE conference paper draft.
+              </li>
             </ul>
+          </div>
         </div>
-    </div>
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2024 Christopher Kingsley. All rights reserved.</p>
-            <nav>
-                <ul class="nav_links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="experience.html">Experience</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                </ul>
-            </nav>
+
+        <div class="entry fade-in">
+          <div class="date">May 2023 – Jul 2023</div>
+          <div class="content">
+            <h3>IT Applications Intern</h3>
+            <p>
+              I evaluated and implemented Oracle HCM enhancements to streamline
+              recruiting and training processes, managing project planning,
+              cost-benefit analysis, and system integrations.
+            </p>
+            <ul>
+              <li>
+                Conducted in-depth analysis of Oracle’s Recruiting Booster,
+                presenting a comprehensive cost-benefit assessment to the board.
+              </li>
+              <li>
+                Collaborated with Application Specialists to execute the HCM
+                replication process for Oracle Guided Learning.
+              </li>
+              <li>
+                Spearheaded project management for the implementation of Oracle
+                Guided Learning within the HCM software framework.
+              </li>
+              <li>
+                Facilitated Single Sign-On integration alongside the
+                infrastructure team.
+              </li>
+            </ul>
+          </div>
         </div>
-    </footer>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        <div class="entry fade-in">
+          <div class="date">May 2022 – Jul 2022</div>
+          <div class="content">
+            <h3>IT Infrastructure Intern</h3>
+            <p>
+              I supported citywide network reliability by configuring Cisco
+              switches and managing hardware lifecycles, enabling stable
+              internet access for municipal operations.
+            </p>
+            <ul>
+              <li>
+                Configured and maintained Cisco switches to optimize network
+                uptime for city services.
+              </li>
+              <li>
+                Collaborated with IT professionals to plan event support and
+                deliver client assistance.
+              </li>
+              <li>
+                Uploaded operating systems and configured servers for cloud
+                testing environments.
+              </li>
+              <li>
+                Decommissioned legacy hardware, documented procedures, and
+                coordinated equipment transport.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            var contactLink = document.getElementById('contact-link');
+    <section class="skills">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <p><strong>Hardware & HDL:</strong> VHDL, SystemVerilog, Intel Quartus Prime Lite, FPGA Design, Hardware Acceleration</p>
+        <p><strong>Software & Programming:</strong> Python, Java, C, C++, JavaScript</p>
+        <p><strong>Web & Mobile Development:</strong> React Native, Node.js</p>
+        <p><strong>Database & Backend:</strong> PostgreSQL, REST APIs, Express.js</p>
+        <p><strong>Systems & Tools:</strong> Linux, Bash Scripting, Git, VS Code</p>
+        <p><strong>Concepts & Methodologies:</strong> Embedded Systems, OOP, Digital Logic Design, Computer Architecture, Data Structures & Algorithms</p>
+      </div>
+    </section>
+  </main>
 
-            contactLink.addEventListener('click', function(event) {
-                event.preventDefault();
-                alert("The Contact page is currently under maintenance and not accessible.");
-            });
-        });
-    </script>
+  <footer>
+  <div class="footer-content">
+    <p>&copy; 2025 Christopher Kingsley. All rights reserved.</p>
+    <nav>
+      <ul class="nav_links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+  <script>
+    // Fade-in on scroll
+    document.addEventListener('DOMContentLoaded', () => {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add('visible');
+              observer.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+      document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
+    });
+  </script>
 </body>
 </html>
-
